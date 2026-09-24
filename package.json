@@ -1,7 +1,7 @@
 {
-  "name": "@jhlagado/debug80-runtime",
-  "version": "0.3.0",
-  "description": "UI-independent Z80 CPU, machine models, and headless execution API",
+  "name": "@jhlagado/z80-runtime",
+  "version": "0.1.0",
+  "description": "Portable Z80 CPU, image loader, and bounded execution API",
   "license": "GPL-3.0-or-later",
   "type": "module",
   "engines": {
@@ -18,18 +18,6 @@
       "types": "./dist/z80/*.d.ts",
       "import": "./dist/z80/*.js"
     },
-    "./platforms/*": {
-      "types": "./dist/platforms/*.d.ts",
-      "import": "./dist/platforms/*.js"
-    },
-    "./platforms/tec-common": {
-      "types": "./dist/platforms/tec-common/index.d.ts",
-      "import": "./dist/platforms/tec-common/index.js"
-    },
-    "./headless": {
-      "types": "./dist/headless/session.d.ts",
-      "import": "./dist/headless/session.js"
-    },
     "./package.json": "./package.json"
   },
   "files": [
@@ -42,12 +30,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jhlagado/debug80-runtime.git"
+    "url": "git+https://github.com/jhlagado/z80-runtime.git"
   },
   "bugs": {
-    "url": "https://github.com/jhlagado/debug80-runtime/issues"
+    "url": "https://github.com/jhlagado/z80-runtime/issues"
   },
-  "homepage": "https://github.com/jhlagado/debug80-runtime#readme",
+  "homepage": "https://github.com/jhlagado/z80-runtime#readme",
   "scripts": {
     "clean": "node --input-type=module -e \"import { rmSync } from 'node:fs'; rmSync('dist', { recursive: true, force: true })\"",
     "build": "npm run clean && tsc -p tsconfig.json",
