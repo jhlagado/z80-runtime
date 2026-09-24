@@ -44,3 +44,7 @@ choose an operating system or device profile.
 The package was extracted from the standalone Debug80 Runtime source at
 `0024be1d868473568984fcde5a8323e575e595bf`. Platform-specific code remains in
 that compatibility repository while consumers migrate to this CPU-first API.
+
+The cross-repository boundary, consumer pins and verification evidence are
+recorded in the
+[Z80 Runtime extraction map](https://github.com/jhlagado/z80-tool-services/blob/main/docs/architecture/z80-runtime-extraction-map-2026-09-24.md).
